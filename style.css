@@ -1,0 +1,296 @@
+body {
+    background: #f0f2f5;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 125px;
+    gap: 95px;
+}
+
+.container.opacity {
+    opacity: 0.2;
+}
+
+.fb_logo {
+    height: 106px;
+    margin-left: -29px;
+}
+
+.leftpanel {
+    margin-top: -135px;
+}
+
+.leftpanel .text {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.75em;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+    margin-top: -12px;
+    margin-left: -1px;
+}
+
+.leftpanel .text p {
+    margin: 0;
+}
+
+.formdiv {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    padding: 10px 20px;
+    width: 400px;
+    text-align: center;
+}
+
+#forgot-pass a {
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 0.875em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#forgot-pass {
+    margin-top: 10px;
+}
+
+.line {
+    margin: 20px 0;
+    border-bottom: 1px solid #dadde1;
+}
+
+#login #email,
+#login #password {
+    width: 95%;
+    margin: 10px 0;
+    padding: 15px 0 10px 5% !important;
+    padding-block: 0;
+    padding-inline: 0;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    font-size: 1.0625em;
+}
+
+#login #login-button {
+    margin: 10px 0;
+    padding-block: 0;
+    padding-inline: 0;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.25em;
+    line-height: 48px;
+    padding: 0;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.create-account,
+.sign-up {
+    border: none;
+    border-radius: 6px;
+    font-size: 1.0625em;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color: #00a400;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.sign-up {
+    font-size: 1.125em;
+    padding: 0 32px;
+    width: 180px;
+    line-height: 36px;
+}
+
+.create-page {
+    border-top: none;
+    color: #1c1e21;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: normal;
+    padding-top: 0;
+    margin-top: 28px;
+    text-align: center;
+}
+
+.create-page a {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: 600;
+    color: inherit;
+    text-decoration: none;
+}
+
+#popup,
+#popup.hidden {
+    visibility: hidden;
+}
+
+#popup.show {
+    visibility: visible;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+#popup h2 {
+    color: #1c1e21;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    line-height: 38px;
+    margin: 0;
+    text-align: left;
+}
+
+#popup p {
+    color: #606770;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.9375em;
+    line-height: 24px;
+    text-align: left;
+    margin: 0;
+}
+
+#close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#popup .line {
+    margin: 10px 0;
+}
+
+#popup .form-text {
+    color: #777;
+    font-size: 0.6875em;
+    text-align: left;
+    margin: 20px 0;
+}
+
+#birthday-help .img,
+#gender .img {
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/EV7ny501e-i.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-position: 0 -60px;
+}
+
+.dob,
+.gender {
+    color: #606770;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.75em;
+    line-height: 20px;
+    margin: 10px 0;
+    text-align: left;
+    position: relative;
+}
+
+.dob-explaination,
+.gender-explaination {
+    visibility: hidden;
+    width: calc(100% - 40px);
+    position: absolute;
+    background-color: white;
+    left: 0;
+    padding: 20px;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 1px 10px rgba(0, 0, 0, .35);
+    color: #65676b;
+    font-size: 0.85em;
+    line-height: 16px;
+    text-align: justify;
+    top: 25px;
+    z-index: 1;
+
+}
+
+.dob-explaination b {
+    font-weight: 600;
+}
+
+.dob-explaination a {
+    color: #1877f2;
+}
+
+.dob-explaination.show,
+.gender-explaination.show {
+    visibility: visible;
+}
+
+.gender-span {
+    border: 1px solid #ccd0d5;
+    padding: 10px;
+    width: 100%;
+}
+
+.gender-span-div,
+.gender-select {
+    text-align: left;
+    display: flex;
+    gap: 15px;
+}
+
+#signup input {
+    background-color: #f5f6f7;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.9375em;
+    line-height: 16px;
+    color: #8d949e;
+    padding: 12px;
+    border: 1px solid #ccd0d5;
+    margin: 0 0 10px 0;
+}
+
+.signup-row {
+    display: flex;
+    gap: 10px;
+}
+
+.signup-row #first-name,
+.signup-row #surname {
+    width: 50%;
+}
+
+.signup-row #mob-email,
+.signup-row #password {
+    width: 100%;
+}
+
+.gender-select select {
+    width: 100%;
+    padding: 5px;
+}
+
+#signup input[type="radio"] {
+    margin: 0;
+}
+
+.gender-span label {
+    display: flex;
+    justify-content: space-between;
+}
